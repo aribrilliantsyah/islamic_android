@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     
@@ -12,13 +11,6 @@
     <link rel="stylesheet" href="assets/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
     <link rel="stylesheet" href="assets/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css">
     <link rel="stylesheet" href="assets/vendors/bower_components/sweetalert2/dist/sweetalert2.min.css">
-    <style>
-      .title{
-        font-size:25px !important;
-        margin: auto !important;
-        font-weight: bold !important;
-      }
-    </style>
     <!-- app -->
     <script src="app/route.js"></script>
     <script src="app/controllers.js"></script>
@@ -28,6 +20,7 @@
     </script>
     <!-- App styles -->
     <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body data-ma-theme="blue">
     <main class="main">
@@ -45,10 +38,10 @@
             </div>
         </header>
 
-        <section>
+        <section class="item">
             <!-- components halaman di sini -->
             <div class="container">
-                <div class="row" id="this">
+                <div class="row">
                    
                 </div>
             </div>
@@ -64,36 +57,7 @@
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/jquery.cookie.js"></script>
     <script>
-        var baseUrl = 'http://dev.book.apk/'
-        $.ajax({
-            url: baseUrl+'api/list_book',
-            dataType: 'JSON',
-            success: function(data){
-                var inject = '';
-                var stock = '';
-                $.each(data,function(i,val){
-                    if (val.stock <= 0) {
-                        stock = '<span class="badge badge-danger text-light float-right">Kosong</span>';
-                    } else {
-                        stock = '<span class="badge badge-primary float-right">Stock ' + val.stock + '</span>';
-                    }
-                    inject+=
-                    '<div class="col-md-6">'+
-                        '<div class="card">'+
-                            '<img class="card-img-top" src="'+baseUrl+'cover/'+val.gambar+'">'+
-                            '<div class="card-body">'+
-                                '<h3>'+val.nama+'</h3>'+
-                                stock+
-                            '</div>'+
-                       ' </div>'+
-                    '</div >';
-                });
-                $('#this').append(inject);
-            },
-            error: function(data){
-                alert('Koneksi Terganggu');
-            }
-        })
+        // script
     </script>
 </body>
 

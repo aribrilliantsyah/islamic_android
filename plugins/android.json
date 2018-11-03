@@ -10,9 +10,6 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.karizuto.dev"
     },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.karizuto.dev"
-    },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.karizuto.dev"
     }

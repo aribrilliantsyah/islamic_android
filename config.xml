@@ -24,12 +24,10 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <preference name="FadeSplashScreen" value="false" />
-    <plugin name="cordova-plugin-splashscreen" spec="^5.0.1" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="SplashScreenDelay" value="3000" />
-    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-statusbar" spec="^2.4.1" />
     <engine name="browser" spec="^5.0.3" />
     <engine name="android" spec="^7.1.0" />
